@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Box from "@/components/Box";
 import { Text, View, Button, StyleSheet } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import Row from "@/components/Row";
+import Column from "@/components/Column";
 
 const boxes = new Array(10).fill(null).map((_, i) => i + 1);
 
@@ -10,9 +12,36 @@ export default function Index() {
   return (
     <View style={style.container}>
       <StatusBar hidden={false} />
-      {boxes.map((i) => (
-        <Box key={i}>#{i}</Box>
-      ))}
+      <Row>
+        <Column>
+          <Box>#1</Box>
+          <Box>#2</Box>
+        </Column>
+        <Column>
+          <Box>#3</Box>
+          <Box>#4</Box>
+        </Column>
+      </Row>
+      <Row>
+        <Column>
+          <Box>#5</Box>
+          <Box>#6</Box>
+        </Column>
+        <Column>
+          <Box>#7</Box>
+          <Box>#8</Box>
+        </Column>
+      </Row>
+      <Row>
+        <Column>
+          <Box>#9</Box>
+          <Box>#10</Box>
+        </Column>
+        <Column>
+          <Box>#11</Box>
+          <Box>#12</Box>
+        </Column>
+      </Row>
     </View>
   );
 }

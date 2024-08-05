@@ -3,13 +3,12 @@ import { Platform, StyleSheet, StatusBar } from "react-native";
 export default StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "row",
-    flexWrap: "wrap",
+    flexDirection: "column",
     alignContent: "center",
     backgroundColor: "ghostwhite",
     ...Platform.select({
       ios: {
-        paddingTop: 20,
+        paddingTop: 40,
       },
       android: {
         paddingTop: StatusBar.currentHeight,
@@ -19,16 +18,28 @@ export default StyleSheet.create({
   box: {
     width: 100,
     height: 100,
-    backgroundColor: "lightgray",
     justifyContent: "center",
     alignItems: "center",
     borderWidth: 1,
     borderColor: "darkslategray",
     borderStyle: "dashed",
-    margin: 10,
+    backgroundColor: "lightgray",
   },
   boxText: {
     color: "darkslategray",
     fontWeight: "bold",
+  },
+  row: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignSelf: "stretch",
+  },
+  column: {
+    flex: 1,
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "space-around",
+    alignSelf: "stretch",
   },
 });
