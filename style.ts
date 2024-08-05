@@ -5,7 +5,6 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-around",
-    alignItems: "center",
     backgroundColor: "ghostwhite",
     ...Platform.select({
       ios: {
@@ -17,11 +16,14 @@ export default StyleSheet.create({
     }),
   },
   box: {
-    width: 300,
     height: 100,
     backgroundColor: "lightgray",
+    alignSelf: "stretch",
     justifyContent: "center",
     alignItems: "center",
+    borderWidth: 1,
+    borderColor: "darkslategray",
+    borderStyle: "dashed",
   },
   boxText: {
     color: "darkslategray",
