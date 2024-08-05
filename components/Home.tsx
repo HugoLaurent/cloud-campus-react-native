@@ -37,7 +37,7 @@ export default function Home({ navigation }: Props) {
           navigation.navigate("Details", {
             title: "Third Item",
             content: "This is the third item",
-            stock: 30,
+            stock: 0,
           })
         }
       />
