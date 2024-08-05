@@ -1,21 +1,14 @@
 import style from "@/style";
 import React, { useState } from "react";
+import Box from "@/components/Box";
 import { Text, View, Button, StyleSheet } from "react-native";
 
 export default function Index() {
   return (
     <View style={style.container}>
-      <View style={style.box}>
-        <Text style={style.boxText}>#1</Text>
-      </View>
-
-      <View style={style.box}>
-        <Text style={style.boxText}>#2</Text>
-      </View>
-
-      <View style={style.box}>
-        <Text style={style.boxText}>#3</Text>
-      </View>
+      <Box>#1</Box>
+      <Box>#2</Box>
+      <Box>#3</Box>
     </View>
   );
 }
