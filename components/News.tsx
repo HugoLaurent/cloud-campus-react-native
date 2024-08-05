@@ -1,11 +1,11 @@
 import { View, Text, StatusBar } from "react-native";
-import style from "./../style";
+import style from "../style";
 
-export default function Settings() {
+export default function News() {
   return (
     <View style={style.container}>
       <StatusBar barStyle="dark-content" />
-      <Text>Settings Screen</Text>
+      <Text>News Content</Text>
     </View>
   );
 }
