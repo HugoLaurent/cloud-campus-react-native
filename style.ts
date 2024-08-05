@@ -4,6 +4,8 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "space-around",
     alignContent: "center",
     backgroundColor: "ghostwhite",
     ...Platform.select({
